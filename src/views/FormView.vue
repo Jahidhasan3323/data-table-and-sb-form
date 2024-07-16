@@ -9,7 +9,7 @@ import SBForm from "../components/sb-form/SBForm.vue";
 import apiService from "../services/apiService";
 import {
   AsyncSelectField,
-  CheckboxField, CustomField,
+  CheckboxField, CustomField, DateField,
   EmailField,
   FileFiled, MultiFileFiled,
   PasswordField, RadioField,
@@ -43,6 +43,7 @@ export default {
         value: 1,
       }),
       name: new StringField({label: 'Full Name', value: 'Rifat'}),
+      date: new DateField({label: 'Date' }),
       email: new EmailField({label: 'Email Address'}),
       password: new PasswordField({label: 'Password'}),
       photo: new FileFiled({label: 'Photo'}),
