@@ -43,7 +43,7 @@ export default {
         value: 1,
       }),
       name: new StringField({label: 'Full Name', value: 'Rifat'}),
-      date: new DateField({label: 'Date' }),
+      date: new DateField({label: 'Date', filedType: 'datetime-local'}),
       email: new EmailField({label: 'Email Address'}),
       password: new PasswordField({label: 'Password'}),
       photo: new FileFiled({label: 'Photo'}),
